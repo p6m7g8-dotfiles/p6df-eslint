@@ -2,11 +2,11 @@
 ######################################################################
 #<
 #
-# Function: p6df::modules::js::deps()
+# Function: p6df::modules::eslint::deps()
 #
 #>
 ######################################################################
-p6df::modules::js::deps() {
+p6df::modules::eslint::deps() {
   ModuleDeps=(
     p6m7g8-dotfiles/p6df-js
   )
@@ -15,11 +15,11 @@ p6df::modules::js::deps() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::js::vscodes()
+# Function: p6df::modules::eslint::vscodes()
 #
 #>
 ######################################################################
-p6df::modules::js::vscodes() {
+p6df::modules::eslint::vscodes() {
 
   # webasm/ts/js/deno/node/html/css
   code --install-extension dbaeumer.vscode-eslint
@@ -31,7 +31,7 @@ p6df::modules::js::vscodes() {
 ######################################################################
 #<
 #
-# Function: str str = p6df::modules::js::eslint::prompt::line()
+# Function: str str = p6df::modules::eslint::prompt::line()
 #
 #  Returns:
 #	str - str
@@ -39,7 +39,7 @@ p6df::modules::js::vscodes() {
 #  Environment:	 ESLINT_USE_FLAT_CONFIG
 #>
 ######################################################################
-p6df::modules::js::eslint::prompt::line() {
+p6df::modules::eslint::prompt::line() {
 
   local str=""
 
@@ -76,11 +76,11 @@ p6df::modules::js::eslint::prompt::line() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::js::eslint::plugins()
+# Function: p6df::modules::eslint::plugins()
 #
 #>
 ######################################################################
-p6df::modules::js::eslint::plugins() {
+p6df::modules::eslint::plugins() {
 
   # @stylistic/eslint-plugin
   # @types/eslint
@@ -105,12 +105,12 @@ p6df::modules::js::eslint::plugins() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::js::eslint::clones()
+# Function: p6df::modules::eslint::clones()
 #
 #  Environment:	 P6_DFZ_SRC_FOCUSED_DIR P6_DFZ_SRC_P6M7G8_DOTFILES_DIR
 #>
 ######################################################################
-p6df::modules::js::eslint::clones() {
+p6df::modules::eslint::clones() {
 
   p6_github_login_clone eslint "$P6_DFZ_SRC_FOCUSED_DIR"
 
