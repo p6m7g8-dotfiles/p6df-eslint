@@ -82,22 +82,16 @@ p6df::modules::eslint::prompt::line() {
 ######################################################################
 p6df::modules::eslint::plugins() {
 
-  # @stylistic/eslint-plugin
-  # @types/eslint
-  # @unocss/eslint-plugin
-  # eslint-plugin-eslint-comments
-  # eslint-plugin-format
-  # eslint-plugin-i
-  # eslint-plugin-jsdoc
-  # eslint-plugin-markdown
-  # eslint-plugin-n
-  # eslint-plugin-no-only-tests
-  # eslint-plugin-perfectionist
-  # eslint-plugin-react-hooks
-  # eslint-plugin-react-refresh
-  # eslint-plugin-react
-  # eslint-plugin-unicorn
-  # eslint-plugin-unused-imports
+  yarn add -D @typescript-eslint/eslint-plugin
+  yarn add -D @typescript-eslint/parser
+  yarn add -D @antfu/eslint-config
+  yarn add -D @next/eslint-plugin-next
+  yarn add -D eslint
+  yarn add -D eslint-plugin-import
+  yarn add -D eslint-plugin-react
+  yarn add -D eslint-plugin-react-hooks
+  yarn add -D eslint-plugin-tailwindcss
+#  yarn add -D eslint-plugin-cdk
 
   p6_return_void
 }
