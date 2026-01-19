@@ -56,7 +56,7 @@ p6df::modules::eslint::prompt::mod() {
 
   for ext in js json yaml yml; do
     if p6_file_exists ".eslintrc.$ext"; then
-      str="${str}file:.eslintrc.js"
+      str="${str}file:.eslintrc.$ext"
     fi
   done
 
