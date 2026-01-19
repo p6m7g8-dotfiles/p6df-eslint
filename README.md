@@ -5,8 +5,6 @@
 ## Badges
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Mergify](https://img.shields.io/endpoint.svg?url=https://gh.mergify.io/badges//p6df-eslint/&style=flat)](https://mergify.io)
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](<https://gitpod.io/#https://github.com//p6df-eslint>)
 
 ## Summary
 
@@ -32,7 +30,7 @@
 - p6df::modules::eslint::deps()
 - p6df::modules::eslint::plugins()
 - p6df::modules::eslint::vscodes()
-- str str = p6df::modules::eslint::prompt::line()
+- str str = p6df::modules::eslint::prompt::mod()
 
 ## Hierarchy
 

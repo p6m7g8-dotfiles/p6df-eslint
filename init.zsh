@@ -31,7 +31,7 @@ p6df::modules::eslint::vscodes() {
 ######################################################################
 #<
 #
-# Function: str str = p6df::modules::eslint::prompt::line()
+# Function: str str = p6df::modules::eslint::prompt::mod()
 #
 #  Returns:
 #	str - str
@@ -39,30 +39,30 @@ p6df::modules::eslint::vscodes() {
 #  Environment:	 ESLINT_USE_FLAT_CONFIG
 #>
 ######################################################################
-p6df::modules::eslint::prompt::line() {
+p6df::modules::eslint::prompt::mod() {
 
   local str=""
 
   if ! p6_string_blank "$ESLINT_USE_FLAT_CONFIG"; then
-    str="${str}env:[ESLINT_USE_FLAT_CONFIG=$ESLINT_USE_FLAT_CONFIG]"
+    str="${str}env:ESLINT_USE_FLAT_CONFIG=$ESLINT_USE_FLAT_CONFIG"
   fi
 
   local ext
   for ext in js mjs cjs ts mts cts; do
     if p6_file_exists "eslint.config.$ext"; then
-      str="${str}file:[eslint.config.$ext]"
+      str="${str}file:eslint.config.$ext"
     fi
   done
 
   for ext in js json yaml yml; do
     if p6_file_exists ".eslintrc.$ext"; then
-      str="${str}file:[.eslintrc.js]"
+      str="${str}file:.eslintrc.js"
     fi
   done
 
   if p6_file_exists "package.json"; then
     if p6_file_contains "eslintOptions" "package.json"; then
-      str="${str}file:[package.json]"
+      str="${str}file:package.json"
     fi
   fi
 
