@@ -2,37 +2,44 @@
 
 ## Table of Contents
 
+- [Badges](#badges)
+- [Summary](#summary)
+- [Contributing](#contributing)
+- [Code of Conduct](#code-of-conduct)
+- [Usage](#usage)
+  - [Functions](#functions)
+- [Hierarchy](#hierarchy)
+- [Author](#author)
+
 ## Badges
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Mergify](https://img.shields.io/endpoint.svg?url=https://gh.mergify.io/badges//p6df-eslint/&style=flat)](https://mergify.io)
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](<https://gitpod.io/#https://github.com//p6df-eslint>)
 
 ## Summary
 
+TODO: Add a short summary of this module.
+
 ## Contributing
 
-- [How to Contribute](<https://github.com//.github/blob/main/CONTRIBUTING.md>)
+- [How to Contribute](<https://github.com/p6m7g8-dotfiles/.github/blob/main/CONTRIBUTING.md>)
 
 ## Code of Conduct
 
-- [Code of Conduct](<https://github.com//.github/blob/main/CODE_OF_CONDUCT.md>)
+- [Code of Conduct](<https://github.com/p6m7g8-dotfiles/.github/blob/main/CODE_OF_CONDUCT.md>)
 
 ## Usage
 
-### Aliases
-
 ### Functions
 
-## p6df-eslint
+#### p6df-eslint
 
-### p6df-eslint/init.zsh
+##### p6df-eslint/init.zsh
 
-- p6df::modules::eslint::clones()
-- p6df::modules::eslint::deps()
-- p6df::modules::eslint::plugins()
-- p6df::modules::eslint::vscodes()
-- str str = p6df::modules::eslint::prompt::line()
+- `p6df::modules::eslint::clones()`
+- `p6df::modules::eslint::deps()`
+- `p6df::modules::eslint::plugins()`
+- `p6df::modules::eslint::vscodes()`
+- `str str = p6df::modules::eslint::prompt::line()`
 
 ## Hierarchy
 
@@ -50,4 +57,4 @@
 
 ## Author
 
-Philip M . Gollucci <pgollucci@p6m7g8.com>
+Philip M. Gollucci <pgollucci@p6m7g8.com>
