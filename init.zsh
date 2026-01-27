@@ -22,8 +22,44 @@ p6df::modules::eslint::deps() {
 p6df::modules::eslint::vscodes() {
 
   # webasm/ts/js/deno/node/html/css
-  code --install-extension dbaeumer.vscode-eslint
-  code --install-extension dsznajder.es7-react-js-snippets
+  p6df::modules::vscode::extension::install dbaeumer.vscode-eslint
+  p6df::modules::vscode::extension::install dsznajder.es7-react-js-snippets
+
+  p6_return_void
+}
+
+######################################################################
+#<
+#
+# Function: str json = p6df::modules::eslint::vscodes::config()
+#
+#  Returns:
+#	str - json
+#
+#>
+######################################################################
+p6df::modules::eslint::vscodes::config() {
+
+  cat <<'EOF'
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true,
+  "eslint.run": "onSave",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml",
+    "xml"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  }
+EOF
 
   p6_return_void
 }
