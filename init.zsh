@@ -79,7 +79,7 @@ p6df::modules::eslint::prompt::line() {
 
   local str=""
 
-  if ! p6_string_blank "$ESLINT_USE_FLAT_CONFIG"; then
+  if p6_string_blank_NOT "$ESLINT_USE_FLAT_CONFIG"; then
     str="${str}env:[ESLINT_USE_FLAT_CONFIG=$ESLINT_USE_FLAT_CONFIG]"
   fi
 
@@ -102,7 +102,7 @@ p6df::modules::eslint::prompt::line() {
     fi
   fi
 
-  if ! p6_string_blank "$str"; then
+  if p6_string_blank_NOT "$str"; then
     str="eslint:\t\t  $str"
   fi
 
