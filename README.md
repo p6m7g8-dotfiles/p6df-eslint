@@ -39,6 +39,7 @@ TODO: Add a short summary of this module.
 - `p6df::modules::eslint::deps()`
 - `p6df::modules::eslint::plugins()`
 - `p6df::modules::eslint::vscodes()`
+- `p6df::modules::eslint::vscodes::config()`
 - `str str = p6df::modules::eslint::prompt::line()`
 
 ## Hierarchy
