@@ -38,6 +38,10 @@ p6df::modules::eslint::vscodes() {
 p6df::modules::eslint::vscodes::config() {
 
   cat <<'EOF'
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
   "eslint.format.enable": true,
   "eslint.lintTask.enable": true,
   "eslint.run": "onSave",
@@ -51,11 +55,7 @@ p6df::modules::eslint::vscodes::config() {
     "jsonc",
     "yaml",
     "xml"
-  ],
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit",
-    "source.organizeImports": "never"
-  }
+  ]
 EOF
 
   p6_return_void
