@@ -100,7 +100,7 @@ p6df::modules::eslint::prompt::line() {
   fi
 
   if p6_string_blank_NOT "$str"; then
-    str="eslint:\t\t  $str"
+    str="$(p6_string_space_pad "eslint:" 16)$str"
   fi
 
   p6_return_str "$str"
@@ -144,4 +144,21 @@ p6df::modules::eslint::clones() {
   p6_run_parallel "0" "4" "$(cat "$P6_DFZ_SRC_P6M7G8_DOTFILES_DIR"/p6df-js/conf/eslints)" "p6_git_p6_clone" "" "$P6_DFZ_SRC_FOCUSED_DIR"
 
   p6_return_void
+}
+
+######################################################################
+#<
+#
+# Function: words eslint $ESLINT_USE_FLAT_CONFIG = p6df::modules::eslint::profile::mod()
+#
+#  Returns:
+#	words - eslint $ESLINT_USE_FLAT_CONFIG
+#
+#  Environment:	 ESLINT_USE_FLAT_CONFIG
+#>
+######################################################################
+p6df::modules::eslint::profile::mod() {
+
+  # shellcheck disable=SC2016
+  p6_return_words 'eslint' "$ESLINT_USE_FLAT_CONFIG"
 }
