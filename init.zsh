@@ -159,5 +159,6 @@ p6df::modules::eslint::clones() {
 ######################################################################
 p6df::modules::eslint::profile::mod() {
 
-  p6_return_words 'eslint' '$ESLINT_USE_FLAT_CONFIG'
+  # shellcheck disable=SC2016
+  p6_return_words 'eslint' "$"
 }
