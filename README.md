@@ -37,10 +37,16 @@ TODO: Add a short summary of this module.
 
 - `p6df::modules::eslint::clones()`
 - `p6df::modules::eslint::deps()`
-- `p6df::modules::eslint::plugins()`
 - `p6df::modules::eslint::vscodes()`
 - `p6df::modules::eslint::vscodes::config()`
 - `str str = p6df::modules::eslint::prompt::line()`
+- `words eslint = p6df::modules::eslint::profile::mod()`
+
+#### p6df-eslint/lib
+
+##### p6df-eslint/lib/plugins.zsh
+
+- `p6df::modules::eslint::plugins()`
 
 ## Hierarchy
 
@@ -49,11 +55,13 @@ TODO: Add a short summary of this module.
 ├── conf
 │   └── eslints
 ├── init.zsh
+├── lib
+│   └── plugins.zsh
 ├── README.md
 └── share
     └── eslint.config.mjs
 
-3 directories, 4 files
+4 directories, 5 files
 ```
 
 ## Author
