@@ -109,29 +109,6 @@ p6df::modules::eslint::prompt::line() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::eslint::plugins()
-#
-#>
-######################################################################
-p6df::modules::eslint::plugins() {
-
-  yarn add -D @typescript-eslint/eslint-plugin
-  yarn add -D @typescript-eslint/parser
-  yarn add -D @antfu/eslint-config
-  yarn add -D @next/eslint-plugin-next
-  yarn add -D eslint
-  yarn add -D eslint-plugin-import
-  yarn add -D eslint-plugin-react
-  yarn add -D eslint-plugin-react-hooks
-  yarn add -D eslint-plugin-tailwindcss
-#  yarn add -D eslint-plugin-cdk
-
-  p6_return_void
-}
-
-######################################################################
-#<
-#
 # Function: p6df::modules::eslint::clones()
 #
 #  Environment:	 P6_DFZ_SRC_FOCUSED_DIR P6_DFZ_SRC_P6M7G8_DOTFILES_DIR
@@ -149,10 +126,10 @@ p6df::modules::eslint::clones() {
 ######################################################################
 #<
 #
-# Function: words eslint $ESLINT_USE_FLAT_CONFIG = p6df::modules::eslint::profile::mod()
+# Function: words eslint = p6df::modules::eslint::profile::mod()
 #
 #  Returns:
-#	words - eslint $ESLINT_USE_FLAT_CONFIG
+#	words - eslint
 #
 #  Environment:	 ESLINT_USE_FLAT_CONFIG
 #>
